@@ -5,7 +5,7 @@ This is a simple tool to create YOLO BUSI (Breast UltraSound Images) Dataset fro
 with mask images (segmentations).
 </p>
 <p>
-The original BUSI Datasset used here has been taken from the following web site:<br>
+The original BUSI Dataset used here has been taken from the following web site:<br>
 </p>
 
 <b>Dataset-BUSI-with-GT</b><br>
@@ -13,9 +13,9 @@ The original BUSI Datasset used here has been taken from the following web site:
 https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset
 </pre>
 
-<p>
 
-About Dataset
+About Dataset (Taken from the above web site)<br>
+<p>
 Breast cancer is one of the most common causes of death among women worldwide. 
 Early detection helps in reducing the number of early deaths. 
 The data reviews the medical images of breast cancer using ultrasound scan. 
@@ -85,7 +85,7 @@ with the ratios.
 2 Resize each image to 512x512
 </p>
 <p>
-3 Augment each image in train dataset by rotating an angle in the following range ANGLES, and save the image as a jpg file.a
+3 Augment each image in <b>train</b> dataset by rotating an angle in the following range ANGLES, and save the image as a jpg file.a
 </p>
 <pre> 
 ANGLES = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]
@@ -102,8 +102,8 @@ ANGLES = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]
 6 Save each image in <b>valid</b> dataset as a jpg file without any augmentation.
 </p>
 
-<h2>4 Create YOLO annotation</h2>
-Please run the following command to create YOLO annotation from <b>BUSI_augmented_master_512x512</b>.<br>
+<h2>4 Create YOLO Annotation</h2>
+Please run the following command to create YOLO Annotation from <b>BUSI_augmented_master_512x512</b>.<br>
 <pre>
 >python create_yolo_annotation_from_augmented_master.py
 </pre>
@@ -121,3 +121,9 @@ Please run the following command to create YOLO annotation from <b>BUSI_augmente
 <br>
 <img src="./asset/BUSI_YOLO_train_annotated.png"><br>
 
+<br>
+<h2>5 Download YOLO Dataset</h2>
+<p>
+You can download this YOLO Dataset (YOLO-BUSI-DATASET-20230414.zip) from
+ <a href="https://drive.google.com/file/d/1IRSc7b3p6sF7ObI2wBk3Mo0ryhlJzKs7/view?usp=sharing">here</a>.
+</p>
