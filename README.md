@@ -117,3 +117,7 @@ Please run the following command to create YOLO annotation from <b>BUSI_augmente
 └─valid/
 </pre>
 
+<b>Sample YOLO annotation in train:</b>
+<br>
+<img src="./asset/BUSI_YOLO_train_annotated.png"><br>
+
