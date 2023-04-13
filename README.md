@@ -85,13 +85,13 @@ with the ratios.
 2 Resize each image to 512x512
 </p>
 <p>
-3 Augment each image in train dataset by rotating an angle, and save the image as jpg file.
+3 Augment each image in train dataset by rotating an angle in the following range ANGLES, and save the image as a jpg file.a
 </p>
 <pre> 
 ANGLES = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]
 </pre>
 <p>
-4 Flip horizontally and vertically each image in <b>train</b> dataset, and save the image as jpg file.
+4 Flip horizontally and vertically each image in <b>train</b> dataset, and save the image as a jpg file.
 </p>
 
 <p>
@@ -103,7 +103,6 @@ ANGLES = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]
 </p>
 
 <h2>4 Create YOLO annotation</h2>
-
 Please run the following command to create YOLO annotation from <b>BUSI_augmented_master_512x512</b>.<br>
 <pre>
 >python create_yolo_annotation_from_augmented_master.py
