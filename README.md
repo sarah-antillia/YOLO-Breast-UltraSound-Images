@@ -50,7 +50,7 @@ YOLO-BREAST-ULTRASOUND-IMAGES
 └─Dataset_BUSI_with_GT
 </pre>
 
-<h2>3 Create master dataset</h2>
+<h2>3 Create Master Dataset</h2>
 
 Please run the following command to create master dataset.<br>
 <pre>
@@ -85,13 +85,13 @@ with the ratios.
 2 Resize each image to 512x512
 </p>
 <p>
-3 Augment each image in <b>train</b> dataset by rotating an angle in the following range ANGLES, and save the image as a jpg file.a
+3 Augment each image in <b>train</b> dataset by rotating the image with an angle in the following range ANGLES, and save the rotated image as a jpg file.
 </p>
 <pre> 
 ANGLES = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]
 </pre>
 <p>
-4 Flip horizontally and vertically each image in <b>train</b> dataset, and save the image as a jpg file.
+4 Flip each image horizontally and vertically in <b>train</b> dataset, and save the flipped image as a jpg file.
 </p>
 
 <p>
@@ -126,4 +126,13 @@ Please run the following command to create YOLO Annotation from <b>BUSI_augmente
 <p>
 You can download this YOLO Dataset (YOLO-BUSI-DATASET-20230414.zip) from
  <a href="https://drive.google.com/file/d/1IRSc7b3p6sF7ObI2wBk3Mo0ryhlJzKs7/view?usp=sharing">here</a>.
+</p>
+
+<h2>6 Download TFRecord Dataset</h2>
+<p>
+You can convert this YOLO dataset to TFRecord by using 
+<a href="https://github.com/sarah-antillia/AnnotationConverters">AnnotationConverter</a>
+<br>
+You can alslo download TFRecord Dataset (TFRecord-BUSI-20230414.zip) from
+ <a href="https://drive.google.com/file/d/1XaqPnH90ZQ9_FuwaUZSvwcUPWS7BdRvE/view?usp=sharing">here</a>.
 </p>
