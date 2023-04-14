@@ -109,6 +109,8 @@ Please run the following command to create YOLO Annotation from <b>BUSI_augmente
 </pre>
 <a href="./create_yolo_annotation_from_augmented_master.py">This create_yolo_annotation_from_augmented_master.py</a> will create <b>YOLO</b> folder which contains <b>test, train, and valid</b> YOLO annotations
  from <b>BUSI_augmented_master_512x512</b> dataset.<br>
+By finding the bounding boxes (rectangular region) from each mask-image in the 
+train, test and valid dataset, we have created YOLO annotation for those subsets.<br>
 
 <pre>
 ./YOLO/
